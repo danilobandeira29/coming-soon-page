@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  --ff-primary: 'Libre Franklin', sans-serif;
+  --fw-light: 300;
+  --fw-semiBold: 600;
+  --fw-bold: 700;
+
+  --clr-blue-primary: hsl(223, 87%, 63%);
+  --clr-paleBlue-secundary: hsl(223, 100%, 88%);
+  --clr-lightRed-secundary: hsl(354, 100%, 66%);
+  --clr-grey-neutral: hsl(0, 0%, 59%);
+  --clr-darkBlue-neutral: hsl(209, 33%, 12%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 2rem;
+}
+
+footer img {
+  width: 25px;
+  height: 25px;
+}
