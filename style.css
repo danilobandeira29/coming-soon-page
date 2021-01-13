@@ -92,11 +92,11 @@ body {
 
 .container form input,
 .container form button {
-  flex: 1;
   border-radius: 40px;
 }
 
 .container form input {
+  width: 100%;
   border: 1px solid var(--clr-paleBlue-secundary);
   padding: 1.5rem 3.5rem 1.5rem;
   margin-bottom: 1rem;
@@ -196,5 +196,79 @@ footer small {
 }
 
 @media (min-width: 1440px) {
-  
+  .container {
+    max-width: 800px;
+  }
+
+  .container img#dashboard {
+    width: 70%;
+  }
+
+  .title-primary {
+    font-size: 4rem;
+  }
+
+  .title-medium {
+    font-size: 2rem;
+  }
+
+  .container form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container form .form-content {
+    display: flex;
+    flex-direction: column;
+    flex: .6;
+    position: relative;
+  }
+
+  .container form .form-content input {
+    flex: 1;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+
+  .container form button {
+    flex: .25;
+    margin-left: 1rem;
+    height: 100%;
+    transition: opacity .3s;
+  }
+
+  .container form button:hover {
+    opacity: .7;
+  }
+
+  @keyframes paragraphError {
+    from { 
+      opacity: 0;
+      bottom: -4rem;
+    }
+    to { 
+      opacity: 1;
+      bottom: -5rem;
+    }
+  }
+
+  .container form p {
+    animation: paragraphError .4s;
+  }
+
+  .container form p.error {
+    position: absolute;
+    bottom: -5rem;
+    left: 3.5rem;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    padding-bottom: 4rem;
+  }
+
+  footer ul {
+    margin-bottom: 3rem;
+  }
 }
